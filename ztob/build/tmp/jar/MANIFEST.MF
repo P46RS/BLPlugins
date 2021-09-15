@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Plugin-Version: 1.0.1
-Plugin-Id: blxztheatrepartystats-plugin
-Plugin-Provider: P46
-Plugin-Description: Bluelite All-in-one plugin for Theatre of Blood
-Plugin-License: 3-Clause BSD License
-
