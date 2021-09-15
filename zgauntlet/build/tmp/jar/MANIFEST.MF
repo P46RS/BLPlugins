@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Plugin-Version: 1.0.1
+Plugin-Id: blgauntlet-plugin
+Plugin-Provider: P46
+Plugin-Description: Bluelite Gauntlet plugin
+Plugin-License: 3-Clause BSD License
+
