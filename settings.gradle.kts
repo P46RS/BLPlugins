@@ -25,7 +25,9 @@
 
 rootProject.name = "BLPlugins"
 include(":entityhiderextension")
-
+include(":nightmare")
+include(":ztob")
+include(":zgauntlet")
 
 for (project in rootProject.children) {
     project.apply {
