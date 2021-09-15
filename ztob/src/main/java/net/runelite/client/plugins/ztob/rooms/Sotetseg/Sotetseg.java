@@ -40,8 +40,8 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.party.messages.TilePing;
 import net.runelite.client.plugins.ztob.Room;
-import net.runelite.client.plugins.ztob.TheatreConfig;
-import net.runelite.client.plugins.ztob.TheatrePlugin;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatrePlugin;
 import net.runelite.client.ui.overlay.infobox.AnimatedInfoBox;
 import net.runelite.client.ui.overlay.infobox.InfoBoxManager;
 import net.runelite.client.util.ImageUtil;
@@ -100,7 +100,7 @@ public class Sotetseg extends Room
 	private PartyService party;
 
 	@Inject
-	protected Sotetseg(TheatrePlugin plugin, TheatreConfig config)
+	protected Sotetseg(BLTheatrePlugin plugin, BLTheatreConfig config)
 	{
 		super(plugin, config);
 	}
@@ -108,8 +108,8 @@ public class Sotetseg extends Room
 	@Override
 	public void init()
 	{
-		TACTICAL_NUKE_SHEET = ImageUtil.loadImageResource(TheatrePlugin.class, "nuke_spritesheet.png");
-		TACTICAL_NUKE_OVERHEAD = ImageUtil.loadImageResource(TheatrePlugin.class, "Tactical_Nuke_Care_Package_Icon_MW2.png");
+		TACTICAL_NUKE_SHEET = ImageUtil.loadImageResource(BLTheatrePlugin.class, "nuke_spritesheet.png");
+		TACTICAL_NUKE_OVERHEAD = ImageUtil.loadImageResource(BLTheatrePlugin.class, "Tactical_Nuke_Care_Package_Icon_MW2.png");
 		TACTICAL_NUKE_SHEET_BLANK = new BufferedImage(TACTICAL_NUKE_SHEET.getWidth(), TACTICAL_NUKE_SHEET.getHeight(), TACTICAL_NUKE_SHEET.getType());
 		Graphics2D graphics = TACTICAL_NUKE_SHEET_BLANK.createGraphics();
 		graphics.setColor(new Color(0, 0, 0, 0));
@@ -121,7 +121,7 @@ public class Sotetseg extends Room
 			AudioFormat format;
 			DataLine.Info info;
 
-			stream = AudioSystem.getAudioInputStream(new BufferedInputStream(TheatrePlugin.class.getResourceAsStream("mw2_tactical_nuke.wav")));
+			stream = AudioSystem.getAudioInputStream(new BufferedInputStream(BLTheatrePlugin.class.getResourceAsStream("mw2_tactical_nuke.wav")));
 			format = stream.getFormat();
 			info = new DataLine.Info(Clip.class, format);
 			clip = (Clip) AudioSystem.getLine(info);

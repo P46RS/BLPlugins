@@ -19,8 +19,8 @@ import net.runelite.client.chat.ChatMessageBuilder;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.ztob.Room;
 import net.runelite.client.plugins.ztob.RoomOverlay;
-import net.runelite.client.plugins.ztob.TheatreConfig;
-import net.runelite.client.plugins.ztob.TheatrePlugin;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatrePlugin;
 import net.runelite.client.plugins.ztob.rooms.Nylocas.NylocasWave;
 
 import javax.inject.Inject;
@@ -71,7 +71,7 @@ public class Bloat extends Room
 	private Client client;
 
 	@Inject
-	protected Bloat(TheatrePlugin plugin, TheatreConfig config)
+	protected Bloat(BLTheatrePlugin plugin, BLTheatreConfig config)
 	{
 		super(plugin, config);
 	}

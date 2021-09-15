@@ -33,13 +33,13 @@ import static net.runelite.api.Constants.TILE_FLAG_BRIDGE;
 
 public abstract class RoomOverlay extends Overlay
 {
-    protected final TheatreConfig config;
+    protected final BLTheatreConfig config;
 
     @Inject
     protected Client client;
 
     @Inject
-    protected RoomOverlay(TheatreConfig config) {
+    protected RoomOverlay(BLTheatreConfig config) {
         this.config = config;
         setPosition(OverlayPosition.DYNAMIC);
         setPriority(OverlayPriority.HIGH);

@@ -17,7 +17,7 @@ import net.runelite.client.config.Range;
 
 @ConfigGroup("Theatre")
 
-public interface TheatreConfig extends Config
+public interface BLTheatreConfig extends Config
 {
     @ConfigItem(
             position = 0,

@@ -28,12 +28,12 @@ import javax.inject.Inject;
 @Extension
 @PluginDescriptor(
         name = "BL xz_Theatre",
-        description = "All-in-one plugin for Theatre of Blood",
+        description = "BL's All-in-one plugin for Theatre of Blood",
         tags = {"ToB", "bluelite"},
         enabledByDefault = false
 )
 
-public class TheatrePlugin extends Plugin
+public class BLTheatrePlugin extends Plugin
 {
     private Room[] rooms = null;
 
@@ -62,8 +62,8 @@ public class TheatrePlugin extends Plugin
     }
 
     @Provides
-    TheatreConfig getConfig(ConfigManager configManager) {
-        return configManager.getConfig(TheatreConfig.class);
+    BLTheatreConfig getConfig(ConfigManager configManager) {
+        return configManager.getConfig(BLTheatreConfig.class);
     }
 
     @Override

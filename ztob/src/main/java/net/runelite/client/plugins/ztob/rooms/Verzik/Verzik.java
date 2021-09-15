@@ -20,8 +20,8 @@ import net.runelite.api.events.NpcDespawned;
 import net.runelite.api.events.NpcSpawned;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.ztob.Room;
-import net.runelite.client.plugins.ztob.TheatreConfig;
-import net.runelite.client.plugins.ztob.TheatrePlugin;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatrePlugin;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -105,7 +105,7 @@ public class Verzik extends Room
 	private boolean isHM = false;
 
 	@Inject
-	private Verzik(TheatrePlugin plugin, TheatreConfig config)
+	private Verzik(BLTheatrePlugin plugin, BLTheatreConfig config)
 	{
 		super(plugin, config);
 	}

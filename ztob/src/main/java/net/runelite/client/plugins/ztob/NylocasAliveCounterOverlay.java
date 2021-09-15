@@ -23,7 +23,7 @@ public class NylocasAliveCounterOverlay extends Overlay
 	private static final String prefix = "Nylocas alive: ";
 	private final PanelComponent panelComponent = new PanelComponent();
 	private LineComponent waveComponent;
-	private TheatreConfig config;
+	private BLTheatreConfig config;
 	@Setter
 	private Instant nyloWaveStart;
 
@@ -38,7 +38,7 @@ public class NylocasAliveCounterOverlay extends Overlay
 	private boolean hidden = false;
 
 	@Inject
-	private NylocasAliveCounterOverlay(TheatreConfig config)
+	private NylocasAliveCounterOverlay(BLTheatreConfig config)
 	{
 		this.config = config;
 

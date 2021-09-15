@@ -31,8 +31,8 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.game.AlternateSprites;
 import net.runelite.client.plugins.poison.PoisonPlugin;
 import net.runelite.client.plugins.ztob.Room;
-import net.runelite.client.plugins.ztob.TheatreConfig;
-import net.runelite.client.plugins.ztob.TheatrePlugin;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatrePlugin;
 import net.runelite.client.ui.overlay.infobox.Counter;
 import net.runelite.client.ui.overlay.infobox.InfoBoxManager;
 import net.runelite.client.util.ImageUtil;
@@ -85,7 +85,7 @@ public class Xarpus extends Room
 	private boolean isP3Active = false;
 
 	@Inject
-	protected Xarpus(TheatrePlugin plugin, TheatreConfig config)
+	protected Xarpus(BLTheatrePlugin plugin, BLTheatreConfig config)
 	{
 		super(plugin, config);
 	}

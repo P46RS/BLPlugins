@@ -19,7 +19,7 @@ import net.runelite.api.coords.LocalPoint;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.game.SkillIconManager;
 import net.runelite.client.plugins.ztob.RoomOverlay;
-import net.runelite.client.plugins.ztob.TheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
 import net.runelite.client.ui.overlay.OverlayUtil;
 
 public class SotetsegOverlay extends RoomOverlay
@@ -30,7 +30,7 @@ public class SotetsegOverlay extends RoomOverlay
 	private SkillIconManager iconManager;
 
 	@Inject
-	protected SotetsegOverlay(TheatreConfig config)
+	protected SotetsegOverlay(BLTheatreConfig config)
 	{
 		super(config);
 	}

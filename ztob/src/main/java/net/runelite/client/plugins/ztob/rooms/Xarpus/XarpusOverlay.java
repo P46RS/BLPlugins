@@ -13,7 +13,7 @@ import net.runelite.api.Perspective;
 import net.runelite.api.Player;
 import net.runelite.api.Point;
 import net.runelite.client.plugins.ztob.RoomOverlay;
-import net.runelite.client.plugins.ztob.TheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
 import net.runelite.client.ui.overlay.OverlayUtil;
 
 public class XarpusOverlay extends RoomOverlay
@@ -22,7 +22,7 @@ public class XarpusOverlay extends RoomOverlay
 	private Xarpus xarpus;
 
 	@Inject
-	protected XarpusOverlay(TheatreConfig config)
+	protected XarpusOverlay(BLTheatreConfig config)
 	{
 		super(config);
 	}

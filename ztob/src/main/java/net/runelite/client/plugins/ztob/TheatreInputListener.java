@@ -13,12 +13,12 @@ public class TheatreInputListener extends MouseAdapter
 	private Nylocas nylocas;
 
 	@Provides
-    TheatreConfig getConfig(ConfigManager configManager) {
-		return configManager.getConfig(TheatreConfig.class);
+    BLTheatreConfig getConfig(ConfigManager configManager) {
+		return configManager.getConfig(BLTheatreConfig.class);
 	}
 
 	@Inject
-	private TheatreConfig config;
+	private BLTheatreConfig config;
 
 	@Override
 	public MouseEvent mouseReleased(MouseEvent event)

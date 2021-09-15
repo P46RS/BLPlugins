@@ -13,7 +13,7 @@ import net.runelite.api.Point;
 import net.runelite.api.coords.LocalPoint;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.plugins.ztob.RoomOverlay;
-import net.runelite.client.plugins.ztob.TheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
 import net.runelite.client.ui.overlay.OverlayUtil;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
@@ -26,7 +26,7 @@ public class VerzikOverlay extends RoomOverlay
 	private Verzik verzik;
 
 	@Inject
-	protected VerzikOverlay(TheatreConfig config)
+	protected VerzikOverlay(BLTheatreConfig config)
 	{
 		super(config);
 	}
@@ -91,8 +91,8 @@ public class VerzikOverlay extends RoomOverlay
 					}
 				}
 
-				if (config.verzikNyloExplodeRange() == TheatreConfig.VerzikNyloSetting.EVERY_CRAB ||
-						(config.verzikNyloExplodeRange() == TheatreConfig.VerzikNyloSetting.AGGRO_CRAB &&
+				if (config.verzikNyloExplodeRange() == BLTheatreConfig.VerzikNyloSetting.EVERY_CRAB ||
+						(config.verzikNyloExplodeRange() == BLTheatreConfig.VerzikNyloSetting.AGGRO_CRAB &&
 								(client.getLocalPlayer() != null && client.getLocalPlayer().equals(k.getInteracting()))))
 				{
 					int size = 1;

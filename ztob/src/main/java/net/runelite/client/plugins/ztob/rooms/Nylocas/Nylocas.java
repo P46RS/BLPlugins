@@ -32,9 +32,9 @@ import net.runelite.client.plugins.ztob.NyloSelectionBox;
 import net.runelite.client.plugins.ztob.NyloSelectionManager;
 import net.runelite.client.plugins.ztob.NylocasAliveCounterOverlay;
 import net.runelite.client.plugins.ztob.Room;
-import net.runelite.client.plugins.ztob.TheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
 import net.runelite.client.plugins.ztob.TheatreInputListener;
-import net.runelite.client.plugins.ztob.TheatrePlugin;
+import net.runelite.client.plugins.ztob.BLTheatrePlugin;
 import net.runelite.client.ui.overlay.components.InfoBoxComponent;
 import net.runelite.client.util.ColorUtil;
 
@@ -108,7 +108,7 @@ public class Nylocas extends Room
 	private boolean nextInstance = true;
 
 	@Inject
-	protected Nylocas(TheatrePlugin plugin, TheatreConfig config)
+	protected Nylocas(BLTheatrePlugin plugin, BLTheatreConfig config)
 	{
 		super(plugin, config);
 	}

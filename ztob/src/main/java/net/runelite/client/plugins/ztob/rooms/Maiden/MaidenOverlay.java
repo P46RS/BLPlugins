@@ -8,7 +8,7 @@ import net.runelite.api.Client;
 import net.runelite.api.Point;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.plugins.ztob.RoomOverlay;
-import net.runelite.client.plugins.ztob.TheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
 import net.runelite.client.ui.overlay.OverlayUtil;
 
 public class MaidenOverlay extends RoomOverlay
@@ -19,7 +19,7 @@ public class MaidenOverlay extends RoomOverlay
 	private Client client;
 
 	@Inject
-	protected MaidenOverlay(TheatreConfig config)
+	protected MaidenOverlay(BLTheatreConfig config)
 	{
 		super(config);
 	}

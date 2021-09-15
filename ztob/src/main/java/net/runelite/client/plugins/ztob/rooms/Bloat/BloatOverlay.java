@@ -8,7 +8,7 @@ import javax.inject.Inject;
 import net.runelite.api.Point;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.plugins.ztob.RoomOverlay;
-import net.runelite.client.plugins.ztob.TheatreConfig;
+import net.runelite.client.plugins.ztob.BLTheatreConfig;
 
 public class BloatOverlay extends RoomOverlay
 {
@@ -16,7 +16,7 @@ public class BloatOverlay extends RoomOverlay
 	private Bloat bloat;
 
 	@Inject
-	protected BloatOverlay(TheatreConfig config)
+	protected BloatOverlay(BLTheatreConfig config)
 	{
 		super(config);
 	}
@@ -28,11 +28,11 @@ public class BloatOverlay extends RoomOverlay
             renderPoly(graphics, bloat.getBloatStateColor(), bloat.getBloatTilePoly(), 2);
         }
 
-		if (bloat.isBloatActive() && config.bloatHands() != TheatreConfig.BloatHandsSetting.DISABLED)
+		if (bloat.isBloatActive() && config.bloatHands() != BLTheatreConfig.BloatHandsSetting.DISABLED)
 		{
 			for (WorldPoint point : bloat.getBloathands().keySet())
 			{
-				if (config.bloatHands() == TheatreConfig.BloatHandsSetting.NORMAL)
+				if (config.bloatHands() == BLTheatreConfig.BloatHandsSetting.NORMAL)
 				{
 					drawTile(graphics, point, Color.CYAN, 1, 255, 10);
 				}

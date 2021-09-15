@@ -7,15 +7,15 @@ import net.runelite.client.ui.overlay.OverlayManager;
 @Singleton
 public abstract class Room
 {
-	protected final TheatrePlugin plugin;
-	protected final TheatreConfig config;
+	protected final BLTheatrePlugin plugin;
+	protected final BLTheatreConfig config;
 
 	@Inject
 	protected OverlayManager overlayManager;
 	// not adding overlay in this class in load because not every room should always have an overlay
 
 	@Inject
-	protected Room(TheatrePlugin plugin, TheatreConfig config)
+	protected Room(BLTheatrePlugin plugin, BLTheatreConfig config)
 	{
 		this.plugin = plugin;
 		this.config = config;
