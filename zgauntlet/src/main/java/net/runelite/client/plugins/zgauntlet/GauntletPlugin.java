@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 @PluginDescriptor(
-		name = "[BL] Gauntlet",
+		name = "BL Gauntlet",
 		description = "Gauntlet plugin",
 		tags = {"gauntlet", "Gauntlet", "bluelite"},
 		enabledByDefault = false
