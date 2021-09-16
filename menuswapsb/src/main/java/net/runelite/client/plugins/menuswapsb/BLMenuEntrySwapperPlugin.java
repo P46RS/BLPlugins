@@ -58,7 +58,7 @@ import org.pf4j.Extension;
 	enabledByDefault = false
 )
 @Extension
-public class MenuEntrySwapperPlugin extends Plugin
+public class BLMenuEntrySwapperPlugin extends Plugin
 {
 	private static final Set<String> TOB_CHEST_TARGETS = ImmutableSet.of(
 			"stamina potion(4)",
@@ -78,7 +78,7 @@ public class MenuEntrySwapperPlugin extends Plugin
 	private ClientThread clientThread;
 
 	@Inject
-	private MenuEntrySwapperConfig config;
+	private BLMenuEntrySwapperConfig config;
 
 	@Inject
 	private ConfigManager configManager;
@@ -87,9 +87,9 @@ public class MenuEntrySwapperPlugin extends Plugin
 	private List<String> bankItemNames = new ArrayList<>();
 
 	@Provides
-    MenuEntrySwapperConfig provideConfig(ConfigManager configManager)
+	BLMenuEntrySwapperConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(MenuEntrySwapperConfig.class);
+		return configManager.getConfig(BLMenuEntrySwapperConfig.class);
 	}
 
 	private void swapMenuEntry(int index, MenuEntry menuEntry)
