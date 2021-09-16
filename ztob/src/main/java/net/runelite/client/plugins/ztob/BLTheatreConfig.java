@@ -15,7 +15,7 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 import net.runelite.client.config.Range;
 
-@ConfigGroup("Theatre")
+@ConfigGroup("BLTheatre")
 
 public interface BLTheatreConfig extends Config
 {
