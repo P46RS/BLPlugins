@@ -49,6 +49,7 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.util.Text;
+import org.pf4j.Extension;
 
 @PluginDescriptor(
 	name = "BL Menu Entry Swapper",
@@ -56,6 +57,7 @@ import net.runelite.client.util.Text;
 	tags = {"npcs", "inventory", "items", "objects"},
 	enabledByDefault = false
 )
+@Extension
 public class MenuEntrySwapperPlugin extends Plugin
 {
 	private static final Set<String> TOB_CHEST_TARGETS = ImmutableSet.of(

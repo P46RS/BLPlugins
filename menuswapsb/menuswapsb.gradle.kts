@@ -24,7 +24,7 @@
  */
 
 
-version = "1.0.0"
+version = "1.0.1"
 
 project.extra["PluginName"] = "BL Menu Entry Swapper"
 project.extra["PluginDescription"] = "Bluelite's built-in menu swapper"

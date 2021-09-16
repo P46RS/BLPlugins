@@ -34,6 +34,7 @@ import net.runelite.client.plugins.menuentryswapper.HouseMode;
 import net.runelite.client.plugins.menuentryswapper.ShiftDepositMode;
 import net.runelite.client.plugins.menuentryswapper.ShiftWithdrawMode;
 
+
 @ConfigGroup("menuentryswapperb")
 public interface MenuEntrySwapperConfig extends Config
 {
