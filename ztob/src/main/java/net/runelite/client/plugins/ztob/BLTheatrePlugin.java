@@ -15,12 +15,12 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.EventBus;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
-import net.runelite.client.plugins.ztob.rooms.Bloat.Bloat;
-import net.runelite.client.plugins.ztob.rooms.Maiden.Maiden;
-import net.runelite.client.plugins.ztob.rooms.Nylocas.Nylocas;
-import net.runelite.client.plugins.ztob.rooms.Sotetseg.Sotetseg;
-import net.runelite.client.plugins.ztob.rooms.Verzik.Verzik;
-import net.runelite.client.plugins.ztob.rooms.Xarpus.Xarpus;
+import net.runelite.client.plugins.ztob.rooms.Bloat.BLBloat;
+import net.runelite.client.plugins.ztob.rooms.Maiden.BLMaiden;
+import net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocas;
+import net.runelite.client.plugins.ztob.rooms.Sotetseg.BLSotetseg;
+import net.runelite.client.plugins.ztob.rooms.Verzik.BLVerzik;
+import net.runelite.client.plugins.ztob.rooms.Xarpus.BLXarpus;
 import org.pf4j.Extension;
 
 import javax.inject.Inject;
@@ -35,30 +35,30 @@ import javax.inject.Inject;
 
 public class BLTheatrePlugin extends Plugin
 {
-    private Room[] rooms = null;
+    private BLRoom[] rooms = null;
 
     @Inject
     private EventBus eventBus;
 
     @Inject
-    private Maiden maiden;
+    private BLMaiden maiden;
     @Inject
-    private Bloat bloat;
+    private BLBloat bloat;
     @Inject
-    private Nylocas nylocas;
+    private BLNylocas nylocas;
     @Inject
-    private Sotetseg sotetseg;
+    private BLSotetseg sotetseg;
     @Inject
-    private Xarpus xarpus;
+    private BLXarpus xarpus;
     @Inject
-    private Verzik verzik;
+    private BLVerzik verzik;
     @Inject
     private Client client;
 
     @Override
     public void configure(Binder binder)
     {
-        binder.bind(TheatreInputListener.class);
+        binder.bind(BLTheatreInputListener.class);
     }
 
     @Provides
@@ -71,14 +71,14 @@ public class BLTheatrePlugin extends Plugin
     {
         if (rooms == null)
         {
-            rooms = new Room[]{maiden, bloat, nylocas, sotetseg, xarpus, verzik};
-            for (Room room : rooms)
+            rooms = new BLRoom[]{maiden, bloat, nylocas, sotetseg, xarpus, verzik};
+            for (BLRoom room : rooms)
             {
                 room.init();
             }
         }
 
-        for(Room room : rooms)
+        for(BLRoom room : rooms)
         {
             room.load();
             eventBus.register(room);
@@ -88,7 +88,7 @@ public class BLTheatrePlugin extends Plugin
     @Override
     protected void shutDown()
     {
-        for(Room room : rooms)
+        for(BLRoom room : rooms)
         {
             eventBus.unregister(room);
             room.unload();

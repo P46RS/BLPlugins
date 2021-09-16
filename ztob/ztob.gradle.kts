@@ -24,7 +24,7 @@
  */
 
 
-version = "1.0.0"
+version = "1.0.5"
 
 project.extra["PluginName"] = "BL xz_Theatre/Party/Stats"
 project.extra["PluginDescription"] = "Bluelite All-in-one plugin for Theatre of Blood"
