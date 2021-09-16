@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Bloat;
+package net.runelite.client.plugins.ztob.rooms.BLBloat;
 
 import java.awt.Color;
 import java.awt.Dimension;

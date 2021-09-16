@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.inject.Inject;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.input.MouseAdapter;
-import net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocas;
+import net.runelite.client.plugins.ztob.rooms.BLNylocas.BLNylocas;
 
 public class BLTheatreInputListener extends MouseAdapter
 {

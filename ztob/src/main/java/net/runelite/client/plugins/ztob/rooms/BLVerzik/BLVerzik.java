@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Verzik;
+package net.runelite.client.plugins.ztob.rooms.BLVerzik;
 
 import java.awt.Color;
 import java.util.ArrayList;

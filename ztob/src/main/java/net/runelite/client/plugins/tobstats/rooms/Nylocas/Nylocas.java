@@ -52,7 +52,7 @@ public class Nylocas extends Room
 
         if (!active)
         {
-            net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocas.setWave31Callback(() ->
+            net.runelite.client.plugins.ztob.rooms.BLNylocas.BLNylocas.setWave31Callback(() ->
             {
                 int millis = getCurrentMillis();
                 log.debug("Executing wave 31 callback " + millis);
@@ -60,7 +60,7 @@ public class Nylocas extends Room
                 printTimeToChatNoCheck(millis,null, "Nylocas last wave", true, config.precisionTimers());
             });
 
-            net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocas.setEndOfWavesCallback(() ->
+            net.runelite.client.plugins.ztob.rooms.BLNylocas.BLNylocas.setEndOfWavesCallback(() ->
             {
                 int millis = getCurrentMillis();
                 log.debug("Executing end of wave callback " + millis);
@@ -85,8 +85,8 @@ public class Nylocas extends Room
     {
         super.reset();
 
-        net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocas.setEndOfWavesCallback(null);
-        net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocas.setWave31Callback(null);
+        net.runelite.client.plugins.ztob.rooms.BLNylocas.BLNylocas.setEndOfWavesCallback(null);
+        net.runelite.client.plugins.ztob.rooms.BLNylocas.BLNylocas.setWave31Callback(null);
 
         isActive = false;
         log.debug("resetting " + this.getClass().getSimpleName());

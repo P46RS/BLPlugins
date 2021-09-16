@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Maiden;
+package net.runelite.client.plugins.ztob.rooms.BLMaiden;
 
 import java.awt.Color;
 import java.util.ArrayList;

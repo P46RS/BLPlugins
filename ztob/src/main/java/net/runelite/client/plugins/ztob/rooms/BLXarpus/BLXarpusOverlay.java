@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Xarpus;
+package net.runelite.client.plugins.ztob.rooms.BLXarpus;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -8,8 +8,6 @@ import java.awt.Polygon;
 import javax.inject.Inject;
 import net.runelite.api.GroundObject;
 import net.runelite.api.NPC;
-import net.runelite.api.NpcID;
-import net.runelite.api.Perspective;
 import net.runelite.api.Player;
 import net.runelite.api.Point;
 import net.runelite.client.plugins.ztob.BLRoomOverlay;

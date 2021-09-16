@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Bloat;
+package net.runelite.client.plugins.ztob.rooms.BLBloat;
 
 import com.google.common.collect.ImmutableSet;
 import lombok.Getter;
@@ -14,14 +14,11 @@ import net.runelite.api.events.GraphicsObjectCreated;
 import net.runelite.api.events.NpcDespawned;
 import net.runelite.api.events.NpcSpawned;
 import net.runelite.api.events.VarbitChanged;
-import net.runelite.client.chat.ChatColorType;
-import net.runelite.client.chat.ChatMessageBuilder;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.ztob.BLRoom;
 import net.runelite.client.plugins.ztob.BLRoomOverlay;
 import net.runelite.client.plugins.ztob.BLTheatreConfig;
 import net.runelite.client.plugins.ztob.BLTheatrePlugin;
-import net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocasWave;
 
 import javax.inject.Inject;
 import java.awt.Color;

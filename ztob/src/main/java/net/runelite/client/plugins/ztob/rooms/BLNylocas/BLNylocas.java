@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Nylocas;
+package net.runelite.client.plugins.ztob.rooms.BLNylocas;
 
 import com.google.common.collect.ImmutableSet;
 import lombok.Getter;
@@ -22,8 +22,6 @@ import net.runelite.api.events.MenuOpened;
 import net.runelite.api.events.NpcDespawned;
 import net.runelite.api.events.NpcSpawned;
 import net.runelite.api.events.VarbitChanged;
-import net.runelite.client.chat.ChatColorType;
-import net.runelite.client.chat.ChatMessageBuilder;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.game.SkillIconManager;

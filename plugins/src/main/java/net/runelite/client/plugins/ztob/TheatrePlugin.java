@@ -16,12 +16,12 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.EventBus;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
-import net.runelite.client.plugins.ztob.rooms.Bloat.Bloat;
-import net.runelite.client.plugins.ztob.rooms.Maiden.Maiden;
-import net.runelite.client.plugins.ztob.rooms.Nylocas.Nylocas;
-import net.runelite.client.plugins.ztob.rooms.Sotetseg.Sotetseg;
-import net.runelite.client.plugins.ztob.rooms.Verzik.Verzik;
-import net.runelite.client.plugins.ztob.rooms.Xarpus.Xarpus;
+import net.runelite.client.plugins.ztob.rooms.BLBloat.Bloat;
+import net.runelite.client.plugins.ztob.rooms.BLMaiden.Maiden;
+import net.runelite.client.plugins.ztob.rooms.BLNylocas.Nylocas;
+import net.runelite.client.plugins.ztob.rooms.BLSotetseg.Sotetseg;
+import net.runelite.client.plugins.ztob.rooms.BLVerzik.Verzik;
+import net.runelite.client.plugins.ztob.rooms.BLXarpus.Xarpus;
 
 @PluginDescriptor(
         name = "xz_Theatre",

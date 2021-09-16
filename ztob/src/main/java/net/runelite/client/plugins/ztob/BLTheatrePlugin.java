@@ -15,12 +15,12 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.EventBus;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
-import net.runelite.client.plugins.ztob.rooms.Bloat.BLBloat;
-import net.runelite.client.plugins.ztob.rooms.Maiden.BLMaiden;
-import net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocas;
-import net.runelite.client.plugins.ztob.rooms.Sotetseg.BLSotetseg;
-import net.runelite.client.plugins.ztob.rooms.Verzik.BLVerzik;
-import net.runelite.client.plugins.ztob.rooms.Xarpus.BLXarpus;
+import net.runelite.client.plugins.ztob.rooms.BLBloat.BLBloat;
+import net.runelite.client.plugins.ztob.rooms.BLMaiden.BLMaiden;
+import net.runelite.client.plugins.ztob.rooms.BLNylocas.BLNylocas;
+import net.runelite.client.plugins.ztob.rooms.BLSotetseg.BLSotetseg;
+import net.runelite.client.plugins.ztob.rooms.BLVerzik.BLVerzik;
+import net.runelite.client.plugins.ztob.rooms.BLXarpus.BLXarpus;
 import org.pf4j.Extension;
 
 import javax.inject.Inject;

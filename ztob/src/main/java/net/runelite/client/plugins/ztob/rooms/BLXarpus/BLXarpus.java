@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Xarpus;
+package net.runelite.client.plugins.ztob.rooms.BLXarpus;
 
 import java.awt.image.BufferedImage;
 import java.util.Arrays;
@@ -29,7 +29,6 @@ import net.runelite.api.events.NpcDespawned;
 import net.runelite.api.events.NpcSpawned;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.game.AlternateSprites;
-import net.runelite.client.plugins.poison.PoisonPlugin;
 import net.runelite.client.plugins.ztob.BLRoom;
 import net.runelite.client.plugins.ztob.BLTheatreConfig;
 import net.runelite.client.plugins.ztob.BLTheatrePlugin;

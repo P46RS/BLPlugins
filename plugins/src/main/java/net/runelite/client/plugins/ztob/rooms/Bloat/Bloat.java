@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Bloat;
+package net.runelite.client.plugins.ztob.rooms.BLBloat;
 
 import com.google.common.collect.ImmutableSet;
 import lombok.Getter;
@@ -21,7 +21,7 @@ import net.runelite.client.plugins.ztob.Room;
 import net.runelite.client.plugins.ztob.RoomOverlay;
 import net.runelite.client.plugins.ztob.TheatreConfig;
 import net.runelite.client.plugins.ztob.TheatrePlugin;
-import net.runelite.client.plugins.ztob.rooms.Nylocas.NylocasWave;
+import net.runelite.client.plugins.ztob.rooms.BLNylocas.NylocasWave;
 
 import javax.inject.Inject;
 import java.awt.Color;

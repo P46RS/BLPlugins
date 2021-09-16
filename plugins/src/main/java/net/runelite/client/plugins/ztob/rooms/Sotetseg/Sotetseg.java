@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Sotetseg;
+package net.runelite.client.plugins.ztob.rooms.BLSotetseg;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

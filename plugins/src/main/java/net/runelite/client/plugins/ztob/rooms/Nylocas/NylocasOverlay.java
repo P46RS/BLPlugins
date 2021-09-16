@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Nylocas;
+package net.runelite.client.plugins.ztob.rooms.BLNylocas;
 
 import java.awt.Color;
 import java.awt.Dimension;

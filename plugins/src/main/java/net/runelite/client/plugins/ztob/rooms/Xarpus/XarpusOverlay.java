@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.ztob.rooms.Xarpus;
+package net.runelite.client.plugins.ztob.rooms.BLXarpus;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

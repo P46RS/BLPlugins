@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import javax.inject.Inject;
 import lombok.Getter;
 import lombok.Setter;
-import net.runelite.client.plugins.ztob.rooms.Nylocas.BLNylocasWave;
+import net.runelite.client.plugins.ztob.rooms.BLNylocas.BLNylocasWave;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayPosition;
 import net.runelite.client.ui.overlay.OverlayPriority;
